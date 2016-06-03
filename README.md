@@ -34,6 +34,7 @@ not understand the config files content, do not modify them, leave them as it is
 ## Output
 JADE will output result to in a list to console and also writes json-ed result to output/ directory: {MD5_OF_INPUT_APK}.txt. A sample can be 
 find in output directory of this repo: https://github.com/flankerhqd/JADE/blob/master/output/92db77bbe1cae9004f11ef9d3d6cbf08.txt
+
 Snippet:
 
 ```json
@@ -84,6 +85,10 @@ To avoid OOM, add -Xmx option to commandline, e.g. java -jar jade-0.1.jar -Xmx81
 JADE is organized by gradle. Run `gradle fatJar` at the root of source directory and single-bundled jar will be generated at ./jade/build/
 Each directory actually represents a git submodule originally. For simplicity I am combining them to same root directories and you can change it 
 as you wish, track upstream Soot changes.
+
+# Technical Description
+
+https://speakerdeck.com/flankerhqd/jade-joint-advanced-defect-assesment
 
 # Credits
 Thanks Soot authors (https://github.com/Sable/soot) for providing such a good framework.
