@@ -1,16 +1,16 @@
 # joint-advanced-defect-assessment
-JADA, This is Joint Advanced Defect assEsment framework for android applications, written in 2014. JADA is a tool written in Java and Scala with the power of Soot to provide 
+This is Joint Advanced Defect assEsment framework for android applications, written in 2014. JAADAS is a tool written in Java and Scala with the power of Soot to provide 
 both interprocedure and intraprocedure static analysis for android applications. Its features include API misuse analysis, local-denial-of-service
 (intent crash) analysis, inter-procedure style taint flow analysis (from intent to sensitive API, i.e. getting a parcelable from intent, and
 use it to start activity).
 
-JADA can also combines multidex into one and analysis them altogether. Most of JADA's detection capabilities can be defined in groovy config file and text file (soot's source and sink file).
+JAADAS can also combines multidex into one and analysis them altogether. Most of JAADAS's detection capabilities can be defined in groovy config file and text file (soot's source and sink file).
 
 # USAGE
-JADA is packed into a single jar archive and I provide a default vulnerability rules file. There're two major mode for JADA.
+JAADAS is packed into a single jar archive and I provide a default vulnerability rules file. There're two major mode for JAADAS.
 
 ## FullAnalysis
-`FullAnalysis` unleash the full power of JADA and Soot, including inter-procedure whole-application analysis and inter-procedure dataflow analysis.
+`FullAnalysis` unleash the full power of JAADAS and Soot, including inter-procedure whole-application analysis and inter-procedure dataflow analysis.
 But it may also consume much time and may not finish on machines with small memory (<16GB). Default is full-mode.
 ## FastAnalysis
 `FastAnalysis` usually finishes in less than 1 minute and is intended for large-scale batch analysis. Inter-procedure analysis is disabled
@@ -19,7 +19,7 @@ to achieve maxmium flexibility. In normal situations this mode is enough for com
 --fastanalysis enables fastanalysis and disables fullanalysis.
 
 Command line for analysis:
-`java -jar jada-0.1.jar vulnanalysis -f 1.apk -p /Users/hqdvista/android-sdks/platforms/ -c /Users/hqdvista/Dropbox/keen/Jada-devs/jada/config/ --fastanalysis`
+`java -jar JAADAS-0.1.jar vulnanalysis -f 1.apk -p /Users/hqdvista/android-sdks/platforms/ -c /Users/hqdvista/Dropbox/keen/JAADAS-devs/JAADAS/config/ --fastanalysis`
 
 ###-c option
 -c must be provided as the directory for config files, including taint rules, source and sink, vulnerable API description and so on. If you do
@@ -32,8 +32,8 @@ not understand the config files content, do not modify them, leave them as it is
 -f option specifies the APK to be analyzed.
 
 ## Output
-JADA will output result to in a list to console and also writes json-ed result to output/ directory: {MD5_OF_INPUT_APK}.txt. A sample can be 
-find in output directory of this repo: https://github.com/flankerhqd/JADA/blob/master/output/92db77bbe1cae9004f11ef9d3d6cbf08.txt
+JAADAS will output result to in a list to console and also writes json-ed result to output/ directory: {MD5_OF_INPUT_APK}.txt. A sample can be 
+find in output directory of this repo: https://github.com/flankerhqd/JAADAS/blob/master/output/92db77bbe1cae9004f11ef9d3d6cbf08.txt
 
 Snippet:
 
@@ -78,11 +78,11 @@ Snippet:
 ```
 
 # Hint
-To avoid OOM, add -Xmx option to commandline, e.g. java -jar jada-0.1.jar -Xmx8192m
+To avoid OOM, add -Xmx option to commandline, e.g. java -jar JAADAS-0.1.jar -Xmx8192m
 
 # Build from source code
 
-JADA is organized by gradle. Run `gradle fatJar` at the root of source directory and single-bundled jar will be generated at ./JADA/build/
+JAADAS is organized by gradle. Run `gradle fatJar` at the root of source directory and single-bundled jar will be generated at ./JAADAS/build/
 Each directory actually represents a git submodule originally. For simplicity I am combining them to same root directories and you can change it 
 as you wish, track upstream Soot changes.
 
@@ -92,7 +92,7 @@ https://speakerdeck.com/flankerhqd/jade-joint-advanced-defect-assesment
 
 # Prebuilt binary Download
 
-https://github.com/flankerhqd/JADA/releases/download/release0.1/JADA-0.1alpha.zip
+https://github.com/flankerhqd/JAADAS/releases/download/release0.1/JAADAS-0.1alpha.zip
 
 # Credits
 Thanks Soot authors (https://github.com/Sable/soot) for providing such a good framework.
