@@ -1,0 +1,4 @@
+ant.importBuild 'build.xml'
+
+task buildjar(dependsOn: 'jasmin-jar') << {
+}

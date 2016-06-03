@@ -1,0 +1,9 @@
+heros.version=trunk
+
+guava.jar=guava-14.0.1.jar
+slf4j-api.jar=slf4j-api-1.7.5.jar
+slf4j-simple.jar=slf4j-simple-1.7.5.jar
+
+mockito.jar=mockito-all-1.9.5.jar
+hamcrest.jar=org.hamcrest.core_1.3.0.jar
+junit.jar=junit.jar

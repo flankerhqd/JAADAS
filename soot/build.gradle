@@ -1,0 +1,12 @@
+//apply plugin: 'java'
+
+//repositories {
+//        mavenCentral()
+//}
+
+//dependencies {
+//        compile(
+//                'org.apache.ant:ant:1.9.2'
+//        )
+//}
+ant.importBuild 'build.xml'

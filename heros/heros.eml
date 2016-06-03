@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/buildtest"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<testFolder url="file://$MODULE_DIR$/test"/>
+		<excludeFolder url="file://$MODULE_DIR$/.gradle"/>
+	</contentEntry>
+	<lib name="guava-14.0.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/heros/guava-14.0.1.jar!/"/>
+	</lib>
+	<lib name="slf4j-api-1.7.5.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/heros/slf4j-api-1.7.5.jar!/"/>
+	</lib>
+	<lib name="slf4j-simple-1.7.5.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/heros/slf4j-simple-1.7.5.jar!/"/>
+	</lib>
+	<lib name="org.hamcrest.core_1.3.0.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/heros/org.hamcrest.core_1.3.0.jar!/"/>
+	</lib>
+	<lib name="junit.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/heros/junit.jar!/"/>
+	</lib>
+	<lib name="mockito-all-1.9.5.jar" scope="COMPILE">
+		<srcroot url="jar://$MODULE_DIR$/mockito-all-1.9.5.jar!/"/>
+		<relative-module-src project-related="jar://$PROJECT_DIR$/heros/mockito-all-1.9.5.jar!/"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/heros/mockito-all-1.9.5.jar!/"/>
+	</lib>
+</component>

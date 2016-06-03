@@ -1,0 +1,12 @@
+<sinkSources>
+	<method signature="&lt;com.example.androidtest.Sources: void sourceTest(com.example.androidtest.MyTestObject, int)&gt;" category="NO_CATEGORY">
+
+	</method>
+	<method signature="&lt;com.example.androidtest.Sinks: void sinkTest(double,double)&gt;" category="NO_CATEGORY">
+		<param index="0" type="double">
+			<accessPath isSink="true" length="0">  
+				<!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+			</accessPath>
+		</param>
+	</method>
+</sinkSources>

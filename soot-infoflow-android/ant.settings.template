@@ -1,0 +1,17 @@
+#Fill the following paths to compile with jars:
+
+#Location of soot.jar
+soot.jar=
+
+#Location of FlowDroid infoflow jar
+infoflow.jar=
+infoflow-summaries.jar=
+
+# Target JAR file
+infoflow-android.jar=
+infoflow-android-javadoc.jar=
+
+# Path to DroidBench
+droidBenchDir=
+
+# TODO: compile with projects checked out and recompile them with build.xml

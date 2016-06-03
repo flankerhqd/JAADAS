@@ -1,0 +1,18 @@
+task fullBuild(dependsOn: [":jasmin:jasmin-jar",":heros:jar",":soot:fulljar",":soot-infoflow:jar",":soot-infoflow-android:jar"] ) << {
+}
+
+task copyCfg(type: Copy) {
+    from 'jade/config'
+    into 'jade/build/libs/config'
+}
+evaluationDependsOn ":jade" 
+evaluationDependsOn ":jasmin" 
+evaluationDependsOn ":heros" 
+evaluationDependsOn ":soot" 
+evaluationDependsOn ":soot-infoflow" 
+evaluationDependsOn ":soot-infoflow-android" 
+project(':jade'){
+	fatJar.dependsOn(fullBuild)
+	fatJar.finalizedBy copyCfg
+}
+//jade.tasks.fatJar.dependsOn fullBuild

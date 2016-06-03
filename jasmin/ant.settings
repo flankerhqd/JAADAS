@@ -1,0 +1,15 @@
+## Location of Java Cup classes jar file to link Jasmin against
+# either classes dir or jar - note polyglot comes with cup-classes
+java_cup.jar=libs/java_cup.jar
+
+# Location in which to generate Jasmin release tarballs
+release.loc=lib
+
+# Version of Jasmin for tagging tarballs
+jasmin.version=2.2.1
+
+# ANT javac source / target / encoding configuration
+ant.build.javac.source=1.5
+ant.build.javac.target=1.5
+ant.build.javac.encoding=iso-8859-1
+

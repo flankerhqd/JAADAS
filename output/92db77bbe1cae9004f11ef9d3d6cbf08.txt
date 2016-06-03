@@ -1,0 +1,707 @@
+{
+  "score": 70.70000457763672,
+  "md5hash": "92db77bbe1cae9004f11ef9d3d6cbf08",
+  "results": [{
+    "desc": "SSL setHostnameVerifier",
+    "sourceStmt": "virtualinvoke $r0.<org.apache.http.conn.ssl.SSLSocketFactory: void setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)>($r3)",
+    "custom": "naive check found at defsite",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.loopj.android.http.MySSLSocketFactory: org.apache.http.conn.ssl.SSLSocketFactory getFixedSocketFactory()>"
+  }, {
+    "desc": "SSL setHostnameVerifier",
+    "sourceStmt": "virtualinvoke $r4.<org.apache.http.conn.ssl.SSLSocketFactory: void setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)>($r7)",
+    "custom": "naive check found at defsite",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<m.framework.network.NetworkHelper: org.apache.http.client.HttpClient getSSLHttpClient()>"
+  }, {
+    "desc": "intent parseUri",
+    "sourceStmt": "$r6 = staticinvoke <android.content.Intent: android.content.Intent parseUri(java.lang.String,int)>($r5, 0)",
+    "custom": "naive check, may false positive",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.mapapi.navi.BaiduMapNavigation: void openBaiduMapNavi(com.baidu.mapapi.navi.NaviPara,android.content.Context)>"
+  }, {
+    "desc": "webview addjsinterface code exec",
+    "sourceStmt": "virtualinvoke $r6.<android.webkit.WebView: void addJavascriptInterface(java.lang.Object,java.lang.String)>($r20, \"local_obj\")",
+    "custom": "naive check, may false positive",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.base.WebViewActivity2: void initData()>"
+  }, {
+    "desc": "webview addjsinterface code exec",
+    "sourceStmt": "virtualinvoke $r6.<android.webkit.WebView: void addJavascriptInterface(java.lang.Object,java.lang.String)>($r20, \"local_obj\")",
+    "custom": "naive check, may false positive",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.base.WebViewActivity2: void initData()>"
+  }, {
+    "desc": "webview addjsinterface code exec",
+    "sourceStmt": "virtualinvoke $r16.<android.webkit.WebView: void addJavascriptInterface(java.lang.Object,java.lang.String)>($r18, \"local_obj\")",
+    "custom": "naive check, may false positive",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.base.LocalWebViewActivity: void initData()>"
+  }, {
+    "desc": "SSL setHostnameVerifier",
+    "sourceStmt": "virtualinvoke $r5.<org.apache.http.conn.ssl.SSLSocketFactory: void setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)>($r6)",
+    "custom": "naive check found at defsite",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.sharesdk.framework.network.i: org.apache.http.client.HttpClient a()>"
+  }, {
+    "desc": "webview addjsinterface code exec",
+    "sourceStmt": "virtualinvoke $r3.<android.webkit.WebView: void addJavascriptInterface(java.lang.Object,java.lang.String)>($r12, $r8)",
+    "custom": "naive check found at defsite",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.api.r: void run()>"
+  }, {
+    "desc": "webview addjsinterface code exec",
+    "sourceStmt": "virtualinvoke $r7.<android.webkit.WebView: void addJavascriptInterface(java.lang.Object,java.lang.String)>($r11, $r10)",
+    "custom": "naive check found at defsite",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.ui.a: void <init>(android.content.Context,cn.jpush.android.data.d)>"
+  }, {
+    "desc": "SSL setHostnameVerifier",
+    "sourceStmt": "virtualinvoke $r4.<org.apache.http.conn.ssl.SSLSocketFactory: void setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)>($r5)",
+    "custom": "naive check found at defsite",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.lbsapi.auth.f: org.apache.http.client.HttpClient a()>"
+  }, {
+    "desc": "SSL setHostnameVerifier",
+    "sourceStmt": "virtualinvoke $r4.<org.apache.http.conn.ssl.SSLSocketFactory: void setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)>($r5)",
+    "custom": "naive check found at defsite",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.lbsapi.auth.c: org.apache.http.client.HttpClient a()>"
+  }, {
+    "desc": "webview addjsinterface code exec",
+    "sourceStmt": "virtualinvoke $r4.<android.webkit.WebView: void addJavascriptInterface(java.lang.Object,java.lang.String)>($r19, \"local_obj\")",
+    "custom": "naive check, may false positive",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.base.WebViewActivity: void initData()>"
+  }, {
+    "desc": "webview addjsinterface code exec",
+    "sourceStmt": "virtualinvoke $r7.<android.webkit.WebView: void addJavascriptInterface(java.lang.Object,java.lang.String)>($r10, $r4)",
+    "custom": "naive check found at defsite",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.data.g: void a(java.lang.String,boolean,boolean)>"
+  }, {
+    "desc": "SSL setHostnameVerifier",
+    "sourceStmt": "virtualinvoke $r3.<org.apache.http.conn.ssl.SSLSocketFactory: void setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)>($r4)",
+    "custom": "naive check found at defsite",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.location.ac: org.apache.http.client.HttpClient 'if'(org.apache.http.params.HttpParams)>"
+  }, {
+    "desc": "Webview js file access misconfigurations",
+    "sourceStmt": "",
+    "custom": " allow-file-access\n",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.umeng.socialize.view.j: boolean c()>"
+  }, {
+    "desc": "X509TrustManager empty impl, lead to SSL vulnerability",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<m.framework.network.SSLSocketFactoryEx$1: void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)>"
+  }, {
+    "desc": "X509TrustManager empty impl, lead to SSL vulnerability",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.location.ai: void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)>"
+  }, {
+    "desc": "X509TrustManager empty impl, lead to SSL vulnerability",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.tencent.open.utils.HttpUtils$MyX509TrustManager: void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)>"
+  }, {
+    "desc": "X509TrustManager empty impl, lead to SSL vulnerability",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.lbsapi.auth.h: void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)>"
+  }, {
+    "desc": "X509TrustManager empty impl, lead to SSL vulnerability",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.lbsapi.auth.e: void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)>"
+  }, {
+    "desc": "X509TrustManager empty impl, lead to SSL vulnerability",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.loopj.android.http.MySSLSocketFactory$1: void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)>"
+  }, {
+    "desc": "X509TrustManager empty impl, lead to SSL vulnerability",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.sharesdk.framework.network.m: void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.sharesdk.tencent.qq.k: cn.sharesdk.framework.authorize.RegisterView a()>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.sharesdk.framework.authorize.g: cn.sharesdk.framework.authorize.RegisterView b()>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.umeng.socialize.view.j: boolean c()>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.base.WebViewActivity2: void initData()>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.base.LocalWebViewActivity: void initData()>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.api.r: void run()>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.tencent.open.SocialApiIml: void writeEncryToken(android.content.Context)>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.ui.a: void <init>(android.content.Context,cn.jpush.android.data.d)>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.tencent.open.c.b: void onAttachedToWindow()>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.sharesdk.tencent.qzone.i: cn.sharesdk.framework.authorize.RegisterView a()>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.base.WebViewActivity: void initData()>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.tencent.weibo.sdk.android.component.Authorize: void initLayout()>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.data.g: void a(java.lang.String,boolean,boolean)>"
+  }, {
+    "desc": "webview save password not disabled",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.umeng.analytics.MobclickAgentJSInterface: void <init>(android.content.Context,android.webkit.WebView)>"
+  }, {
+    "desc": "NPE_CRASH",
+    "sourceStmt": "$z0 = virtualinvoke $r5.<java.lang.String: boolean equals(java.lang.Object)>(\"android.intent.action.BOOT_COMPLETED\")",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.broadcastReceiver.PlanReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "NPE_CRASH",
+    "sourceStmt": "$z0 = virtualinvoke $r5.<java.lang.String: boolean equals(java.lang.Object)>(\"com.fugao.fxhealth.share.meal\")",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.broadcastReceiver.PlanReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "NPE_CRASH",
+    "sourceStmt": "$i0 = virtualinvoke $r9.<android.os.Bundle: int getInt(java.lang.String)>(\"planId\")",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.broadcastReceiver.PlanReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "cast crash exception",
+    "sourceStmt": "$r14 = (cn.jpush.android.data.d) $r13",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "cast crash exception",
+    "sourceStmt": "$r15 = (cn.jpush.android.data.l) $r14",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "cast crash exception",
+    "sourceStmt": "$r30 = (android.net.NetworkInfo) $r29",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "cast crash exception",
+    "sourceStmt": "$r5 = (cn.jpush.android.data.d) $r4",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.ui.PushActivity: void a(android.content.Intent)>"
+  }, {
+    "desc": "cast crash exception",
+    "sourceStmt": "$r6 = (cn.jpush.android.data.d) $r5",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.ui.PushActivity: void onCreate(android.os.Bundle)>"
+  }, {
+    "desc": "NPE_CRASH",
+    "sourceStmt": "$r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r5)",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.receiver.JPushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "NPE_CRASH",
+    "sourceStmt": "$r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r5)",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.receiver.JPushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "NPE_CRASH",
+    "sourceStmt": "$r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r5)",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.receiver.JPushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "NPE_CRASH",
+    "sourceStmt": "$r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r5)",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.receiver.JPushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "NPE_CRASH",
+    "sourceStmt": "$r3 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r3)",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.receiver.JPushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "NPE_CRASH",
+    "sourceStmt": "$r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r5)",
+    "custom": "",
+    "vulnKind": 1,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.receiver.JPushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "cn.sharesdk.demo.wxapi.WXEntryActivity FragmentInjection exist! (before API 17)",
+    "sourceStmt": "",
+    "custom": "",
+    "vulnKind": 3,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": ""
+  }, {
+    "desc": "webview addjsinterface code exec",
+    "sourceStmt": "virtualinvoke $r6.<android.webkit.WebView: void addJavascriptInterface(java.lang.Object,java.lang.String)>($r20, \"local_obj\")",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.base.WebViewActivity2: void initData()>"
+  }, {
+    "desc": "SSL setHostnameVerifier",
+    "sourceStmt": "virtualinvoke $r0.<org.apache.http.conn.ssl.SSLSocketFactory: void setHostnameVerifier(org.apache.http.conn.ssl.X509HostnameVerifier)>($r3)",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.loopj.android.http.MySSLSocketFactory: org.apache.http.conn.ssl.SSLSocketFactory getFixedSocketFactory()>"
+  }, {
+    "desc": "webview addjsinterface code exec",
+    "sourceStmt": "virtualinvoke $r4.<android.webkit.WebView: void addJavascriptInterface(java.lang.Object,java.lang.String)>($r19, \"local_obj\")",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.base.WebViewActivity: void initData()>"
+  }, {
+    "desc": "webview addjsinterface code exec",
+    "sourceStmt": "virtualinvoke $r16.<android.webkit.WebView: void addJavascriptInterface(java.lang.Object,java.lang.String)>($r18, \"local_obj\")",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.base.LocalWebViewActivity: void initData()>"
+  }, {
+    "desc": "webview addjsinterface code exec",
+    "sourceStmt": "virtualinvoke $r6.<android.webkit.WebView: void addJavascriptInterface(java.lang.Object,java.lang.String)>($r20, \"local_obj\")",
+    "custom": "",
+    "vulnKind": 0,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.fugao.fxhealth.base.WebViewActivity2: void initData()>"
+  }, {
+    "desc": "",
+    "sourceStmt": "staticinvoke <android.provider.Settings$System: boolean putString(android.content.ContentResolver,java.lang.String,java.lang.String)>($r3, \"bd_setting_i\", $r2)",
+    "custom": "",
+    "vulnKind": 5,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.android.bbalbs.common.util.a$a: com.baidu.android.bbalbs.common.util.a$a a(android.content.Context)>"
+  }, {
+    "desc": "",
+    "sourceStmt": "staticinvoke <android.provider.Settings$System: boolean putString(android.content.ContentResolver,java.lang.String,java.lang.String)>($r8, \"com.baidu.deviceid\", $r9)",
+    "custom": "",
+    "vulnKind": 5,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.android.bbalbs.common.util.a: java.lang.String a(android.content.Context)>"
+  }, {
+    "desc": "",
+    "sourceStmt": "staticinvoke <android.provider.Settings$System: boolean putString(android.content.ContentResolver,java.lang.String,java.lang.String)>($r8, $r2, $r9)",
+    "custom": "",
+    "vulnKind": 5,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.android.bbalbs.common.util.a: java.lang.String a(android.content.Context)>"
+  }, {
+    "desc": "",
+    "sourceStmt": "staticinvoke <android.provider.Settings$System: boolean putString(android.content.ContentResolver,java.lang.String,java.lang.String)>($r8, \"com.baidu.deviceid\", $r9)",
+    "custom": "",
+    "vulnKind": 5,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.android.bbalbs.common.util.a: java.lang.String a(android.content.Context)>"
+  }, {
+    "desc": "",
+    "sourceStmt": "staticinvoke <android.provider.Settings$System: boolean putString(android.content.ContentResolver,java.lang.String,java.lang.String)>($r8, $r2, $r9)",
+    "custom": "",
+    "vulnKind": 5,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.android.bbalbs.common.util.a: java.lang.String a(android.content.Context)>"
+  }, {
+    "desc": "",
+    "sourceStmt": "staticinvoke <android.provider.Settings$System: boolean putString(android.content.ContentResolver,java.lang.String,java.lang.String)>($r8, \"com.baidu.deviceid\", $r9)",
+    "custom": "",
+    "vulnKind": 5,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<com.baidu.android.bbalbs.common.util.a: java.lang.String a(android.content.Context)>"
+  }, {
+    "desc": "",
+    "sourceStmt": "virtualinvoke $r9.<android.net.wifi.WifiManager: boolean setWifiEnabled(boolean)>(1)",
+    "custom": "",
+    "vulnKind": 5,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.a.d: void f()>"
+  }, {
+    "desc": "",
+    "sourceStmt": "virtualinvoke $r6.<android.net.wifi.WifiManager: boolean setWifiEnabled(boolean)>(0)",
+    "custom": "",
+    "vulnKind": 5,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.a.d: void g()>"
+  }, {
+    "desc": "",
+    "sourceStmt": "virtualinvoke $r6.<android.net.wifi.WifiManager: boolean setWifiEnabled(boolean)>(0)",
+    "custom": "",
+    "vulnKind": 5,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.a.d: void g()>"
+  }, {
+    "desc": "",
+    "sourceStmt": "$z0 = staticinvoke <android.provider.Settings$System: boolean putString(android.content.ContentResolver,java.lang.String,java.lang.String)>($r4, $r3, $r1)",
+    "custom": "",
+    "vulnKind": 5,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.util.a: java.lang.String q(android.content.Context,java.lang.String)>"
+  }, {
+    "desc": "",
+    "sourceStmt": "staticinvoke <android.provider.Settings$System: boolean putString(android.content.ContentResolver,java.lang.String,java.lang.String)>($r2, $r3, $r4)",
+    "custom": "",
+    "vulnKind": 5,
+    "destMethod": "",
+    "paths": [],
+    "destStmt": "",
+    "sourceMethod": "<cn.jpush.android.util.a: boolean C(android.content.Context)>"
+  }, {
+    "desc": "sensitive data flow",
+    "sourceStmt": "$r6 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>($r6)",
+    "custom": "",
+    "vulnKind": 2,
+    "destMethod": "<cn.jpush.android.api.m: void a(android.content.Context,java.util.Map,int,java.lang.String,java.lang.String,cn.jpush.android.data.d)>",
+    "paths": [],
+    "destStmt": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)>($r8, $r7)",
+    "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "sensitive data flow",
+    "sourceStmt": "$r3 = virtualinvoke $r0.<cn.jpush.android.ui.PushActivity: android.content.Intent getIntent()>()",
+    "custom": "",
+    "vulnKind": 2,
+    "destMethod": "<cn.jpush.android.api.m: void a(android.content.Context,java.util.Map,int,java.lang.String,java.lang.String,cn.jpush.android.data.d)>",
+    "paths": [],
+    "destStmt": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)>($r8, $r7)",
+    "sourceMethod": "<cn.jpush.android.ui.PushActivity: void onCreate(android.os.Bundle)>"
+  }, {
+    "desc": "sensitive data flow",
+    "sourceStmt": "$r9 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>($r9)",
+    "custom": "",
+    "vulnKind": 2,
+    "destMethod": "<cn.jpush.android.api.m: void a(android.content.Context,java.util.Map,int,java.lang.String,java.lang.String,cn.jpush.android.data.d)>",
+    "paths": [],
+    "destStmt": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)>($r8, $r7)",
+    "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "sensitive data flow",
+    "sourceStmt": "$r6 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>($r6)",
+    "custom": "",
+    "vulnKind": 2,
+    "destMethod": "<cn.jpush.android.api.m: void b(android.content.Context,cn.jpush.android.data.d)>",
+    "paths": [],
+    "destStmt": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r4)",
+    "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "sensitive data flow",
+    "sourceStmt": "$r3 = virtualinvoke $r0.<cn.jpush.android.ui.PushActivity: android.content.Intent getIntent()>()",
+    "custom": "",
+    "vulnKind": 2,
+    "destMethod": "<cn.jpush.android.api.m: void b(android.content.Context,cn.jpush.android.data.d)>",
+    "paths": [],
+    "destStmt": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r4)",
+    "sourceMethod": "<cn.jpush.android.ui.PushActivity: void onCreate(android.os.Bundle)>"
+  }, {
+    "desc": "sensitive data flow",
+    "sourceStmt": "$r9 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>($r9)",
+    "custom": "",
+    "vulnKind": 2,
+    "destMethod": "<cn.jpush.android.api.m: void b(android.content.Context,cn.jpush.android.data.d)>",
+    "paths": [],
+    "destStmt": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r4)",
+    "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "sensitive data flow",
+    "sourceStmt": "$r28 = virtualinvoke $r2.<android.content.Intent: android.os.Bundle getExtras()>()",
+    "custom": "",
+    "vulnKind": 2,
+    "destMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+    "paths": [],
+    "destStmt": "virtualinvoke $r1.<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)>($r27, $r24)",
+    "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "sensitive data flow",
+    "sourceStmt": "$r24 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>($r24)",
+    "custom": "",
+    "vulnKind": 2,
+    "destMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+    "paths": [],
+    "destStmt": "virtualinvoke $r1.<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)>($r27, $r24)",
+    "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "sensitive data flow",
+    "sourceStmt": "$r4 = virtualinvoke $r2.<android.content.Intent: android.os.Bundle getExtras()>()",
+    "custom": "",
+    "vulnKind": 2,
+    "destMethod": "<com.fugao.fxhealth.receiver.JPushReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+    "paths": [],
+    "destStmt": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2)",
+    "sourceMethod": "<com.fugao.fxhealth.receiver.JPushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "sensitive data flow",
+    "sourceStmt": "$r6 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>($r6)",
+    "custom": "",
+    "vulnKind": 2,
+    "destMethod": "<cn.jpush.android.data.x: void a(android.content.Context)>",
+    "paths": [],
+    "destStmt": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2)",
+    "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }, {
+    "desc": "sensitive data flow",
+    "sourceStmt": "$r9 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>($r9)",
+    "custom": "",
+    "vulnKind": 2,
+    "destMethod": "<cn.jpush.android.data.x: void a(android.content.Context)>",
+    "paths": [],
+    "destStmt": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2)",
+    "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+  }]
+}

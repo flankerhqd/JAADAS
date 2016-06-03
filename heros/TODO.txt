@@ -1,0 +1,12 @@
+IFDS:
+	Have simpler templates for flow functions.
+		Should be efficient, do not create too many sets.	
+	Create binary sets.
+	Separate normal return from throw flow functions?
+	Useful templates
+		Template for local-variable tracking analyses		
+	Performance optimizations	
+	Implement subsumtion as in CC'10 paper
+	
+	Notes:
+		Could it be that RHS even works for infinite domains?

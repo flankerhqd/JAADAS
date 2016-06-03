@@ -1,0 +1,6 @@
+include 'jasmin'
+include 'heros'
+include 'soot'
+include 'soot-infoflow'
+include 'soot-infoflow-android'
+include 'jade'

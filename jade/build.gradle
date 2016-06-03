@@ -1,0 +1,43 @@
+apply plugin: 'scala'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'eu.appsatori:gradle-fatjar-plugin:0.3'
+    }
+}
+
+apply plugin: 'eu.appsatori.fatjar'
+repositories {
+        mavenCentral()
+}
+
+sourceSets {
+        main {
+              scala {
+                    srcDirs = ['src/main/scala', 'src/main/java']
+              }
+              java {
+                    srcDirs = []
+            }
+        }
+}
+
+dependencies {
+        compile 'org.scala-lang:scala-library:2.11.4'
+        compile files('../heros/heros-trunk.jar', '../jasmin/lib/jasminclasses-2.2.1.jar','../soot/lib/soot-trunk.jar', '../soot-infoflow/build/jar/soot-infoflow.jar', '../soot-infoflow-android/build/jar/soot-infoflow-android.jar')
+        compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+version = '0.1'
+
+fatJar {
+    manifest {
+        attributes(
+		"Main-Class": 'main'
+	)
+	}
+}

@@ -1,0 +1,88 @@
+<android.content.Intent: java.lang.String getStringExtra(java.lang.String)> -> _SOURCE_
+<android.content.Intent: android.net.Uri getData()> -> _SOURCE_
+<android.content.Intent: android.os.Parcelable getParcelableExtra(java.lang.String)> -> _SOURCE_
+<android.app.Activity: android.content.Intent getIntent()> -> _SOURCE_
+%<android.widget.EditText: android.text.Editable getText()> -> _SOURCE_
+<android.content.Intent: android.os.Bundle getExtras()> -> _SOURCE_
+%<android.widget.TextView: void setText(java.lang.CharSequence)> -> _SINK_
+<android.webkit.WebView: void loadUrl(java.lang.String)> -> _SINK_
+<android.webkit.WebView: void loadUrl(java.lang.String, java.util.Map)> -> _SINK_
+<android.webkit.WebView: void loadDataWithBaseURL(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)> -> _SINK_
+<android.webkit.WebView: void loadData(java.lang.String, java.lang.String, java.lang.String)> -> _SINK_
+
+<android.content.Context: void startActivity(android.content.Intent)> -> _SINK_
+<android.content.Context: void sendBroadcast(android.content.Intent)> -> _SINK_
+<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_
+<android.content.Context: void startActivity(android.content.Intent,android.os.Bundle)> -> _SINK_
+<android.content.ContextWrapper: void startService(android.content.Intent)> -> _SINK_
+
+<android.content.Intent: void putExtras(android.os.Bundle)> -> _SINK_
+
+<android.app.Activity: void startActivity(android.content.Intent)> -> _SINK_
+<android.app.Activity: void startActivity(android.content.Intent,android.os.Bundle)> -> _SINK_
+<android.app.Activity: void startActivities(android.content.Intent[])> -> _SINK_
+<android.app.Activity: void startActivities(android.content.Intent[],android.os.Bundle)> -> _SINK_
+<android.app.Activity: void startActivityForResult(android.content.Intent,int)> -> _SINK_
+<android.app.Activity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)> -> _SINK_
+<android.app.Activity: void startActivityFromChild(android.app.Activity,android.content.Intent,int,android.os.Bundle)> -> _SINK_
+<android.app.Activity: void startActivityFromChild(android.app.Activity,android.content.Intent,int)> -> _SINK_
+<android.app.Activity: void startActivityFromFragment(android.app.Fragment,android.content.Intent,int,android.os.Bundle)> -> _SINK_
+<android.app.Activity: void startActivityFromFragment(android.app.Fragment,android.content.Intent,int)> -> _SINK_
+<android.app.Activity: void startActivityIfNeeded(android.content.Intent,int,android.os.Bundle)> -> _SINK_
+<android.app.Activity: void startActivityIfNeeded(android.content.Intent,int)> -> _SINK_
+<android.app.Activity: android.content.ComponentName startService(android.content.Intent)> -> _SINK_
+<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)> -> _SINK_
+<android.app.Activity: void sendBroadcast(android.content.Intent)> -> _SINK_
+<android.app.Activity: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_
+<android.app.Activity: void sendBroadcastAsUser(android.content.Intent,android.os.UserHandle)> -> _SINK_
+<android.app.Activity: void sendBroadcastAsUser(android.content.Intent,android.os.UserHandle,java.lang.String)> -> _SINK_
+<android.app.Activity: void sendOrderedBroadcast(android.content.Intent,java.lang.String,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)> -> _SINK_
+<android.app.Activity: void sendOrderedBroadcast(android.content.Intent,java.lang.String)> -> _SINK_
+<android.app.Activity: void sendOrderedBroadcastAsUser(android.content.Intent,android.os.UserHandle,java.lang.String,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)> -> _SINK_
+<android.app.Activity: void sendStickyBroadcast(android.content.Intent)> -> _SINK_
+<android.app.Activity: void sendStickyBroadcastAsUser(android.content.Intent,android.os.UserHandle)> -> _SINK_
+<android.app.Activity: void sendStickyOrderedBroadcast(android.content.Intent,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)> -> _SINK_
+<android.app.Activity: void sendStickyOrderedBroadcastAsUser(android.content.Intent,android.os.UserHandle,android.content.BroadcastReceiver,android.os.Handler,int,java.lang.String,android.os.Bundle)> -> _SINK_
+
+
+<java.net.URL: void <init>(java.lang.String,java.lang.String,int,java.lang.String)> -> _SINK_
+<java.net.URL: void <init>(java.lang.String,java.lang.String,java.lang.String)> -> _SINK_
+<java.net.URL: void <init>(java.lang.String,java.lang.String,int,java.lang.String,java.net.URLStreamHandler)> -> _SINK_
+<java.net.URL: void <init>(java.lang.String)> -> _SINK_
+<java.net.URL: void <init>(java.net.URL,java.lang.String)> -> _SINK_
+<java.net.URL: void <init>(java.net.URL,java.lang.String,java.net.URLStreamHandler)> -> _SINK_
+
+<java.io.OutputStream: void write(byte[])> -> _SINK_
+<java.io.OutputStream: void write(byte[],int,int)> -> _SINK_
+<java.io.OutputStream: void write(int)> -> _SINK_
+
+<java.io.FileOutputStream: void write(byte[])> -> _SINK_
+<java.io.FileOutputStream: void write(byte[],int,int)> -> _SINK_
+<java.io.FileOutputStream: void write(int)> -> _SINK_
+
+<java.io.Writer: void write(char[])> -> _SINK_
+<java.io.Writer: void write(char[],int,int)> -> _SINK_
+<java.io.Writer: void write(int)> -> _SINK_
+<java.io.Writer: void write(java.lang.String)> -> _SINK_
+<java.io.Writer: void write(java.lang.String,int,int)> -> _SINK_
+
+<java.net.URL: void set(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)> -> _SINK_
+<java.net.URL: void set(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> -> _SINK_
+<android.content.Intent: android.content.Intent setComponent(android.content.ComponentName)> -> _SINK_
+%<android.content.Intent: android.content.Intent setAction(java.lang.String)> -> _SINK_
+%<android.content.Intent: android.content.Intent setData(android.net.Uri)> -> _SINK_
+
+<android.content.IntentFilter: void addAction(java.lang.String)> -> _SINK_
+<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)> android.permission.SEND_SMS -> _SINK_
+<android.telephony.SmsManager: void sendDataMessage(java.lang.String,java.lang.String,short,byte[],android.app.PendingIntent,android.app.PendingIntent)> android.permission.SEND_SMS -> _SINK_
+<android.telephony.SmsManager: void sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList)> android.permission.SEND_SMS -> _SINK_
+<java.net.Socket: void connect(java.net.SocketAddress)> -> _SINK_
+% should be tested(socket rule)
+
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)> -> _SINK_
+<android.database.sqlite.SQLiteDatabase: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)> -> _SINK_
+<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)> -> _SINK_
+<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])> -> _SINK_
+<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])> -> _SINK_
+
+<android.content.Intent: android.content.Intent parseUri(java.lang.String,int)> -> _SOURCE_

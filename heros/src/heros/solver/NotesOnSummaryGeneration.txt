@@ -1,0 +1,5 @@
+1.) determine fixed methods and fixed call sites
+2.) summarize fixed methods; special care needs to be taken if they are in an SCC
+3.) summarize information at fixed call sites within non-fixed methods
+4.) find a good way to store summaries
+5.) find a way to take summaries into account on next run

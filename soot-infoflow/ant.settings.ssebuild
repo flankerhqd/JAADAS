@@ -1,0 +1,4 @@
+soot.jar=lib/soot-trunk.jar
+infoflow.jar=build/jar/soot-infoflow.jar
+infoflow-javadoc.jar=build/jar/soot-infoflow-javadoc.jar
+infoflow-tests.jar=build/jar/soot-infoflow-tests.jar
