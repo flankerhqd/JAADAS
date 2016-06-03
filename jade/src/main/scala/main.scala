@@ -12,7 +12,7 @@ object main {
   def main(args: Array[String]) {
 
     val parser = new scopt.OptionParser[Config]("jade") {
-      head("Joint Application Defect asseEsment - JADE", "1.0alpha, author flanker<flankerhe@keencloudtech.com>")
+      head("Joint Application Defect asseEsment - JADA", "1.0alpha, author flanker")
 
       //general options
       opt[String]('f', "apkFile") required() action { (s, c) =>
