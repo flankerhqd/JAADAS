@@ -1,5 +1,5 @@
 # JADE
-JADE stands for Joint Advanced Defect assEsment for android applications written in 2014. JADE is a tool written in Java and Scala with the power of Soot to provide 
+JADE stands for Joint Advanced Defect assEsment framework for android applications, written in 2014. JADE is a tool written in Java and Scala with the power of Soot to provide 
 both interprocedure and intraprocedure static analysis for android applications. Its features include API misuse analysis, local-denial-of-service
 (intent crash) analysis, inter-procedure style taint flow analysis (from intent to sensitive API, i.e. getting a parcelable from intent, and
 use it to start activity).
