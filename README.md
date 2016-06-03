@@ -90,6 +90,10 @@ as you wish, track upstream Soot changes.
 
 https://speakerdeck.com/flankerhqd/jade-joint-advanced-defect-assesment
 
+# Prebuilt binary Download
+
+https://github.com/flankerhqd/JADE/releases/download/release0.1/jade-0.1alpha.zip
+
 # Credits
 Thanks Soot authors (https://github.com/Sable/soot) for providing such a good framework.
 
