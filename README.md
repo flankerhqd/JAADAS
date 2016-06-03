@@ -1,5 +1,5 @@
-# joint-advanced-defect-assessment
-This is Joint Advanced Defect assEsment framework for android applications, written in 2014. JAADAS is a tool written in Java and Scala with the power of Soot to provide 
+# Joint Advanced Application Defect Assessment for Android Application
+This is Joint Advanced Defect Assessment framework for android applications (JAADS, original name renamed to avoid potential trademark issue), written in 2014. JAADAS is a tool written in Java and Scala with the power of Soot to provide 
 both interprocedure and intraprocedure static analysis for android applications. Its features include API misuse analysis, local-denial-of-service
 (intent crash) analysis, inter-procedure style taint flow analysis (from intent to sensitive API, i.e. getting a parcelable from intent, and
 use it to start activity).
