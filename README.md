@@ -35,6 +35,45 @@ not understand the config files' content, do not modify them, leave them as it i
 JADE will output result to in a list to console and also writes json-ed result to output/ directory: {MD5_OF_INPUT_APK}.txt. A sample can be 
 find in output directory of this repo: https://github.com/flankerhqd/JADE/blob/master/output/92db77bbe1cae9004f11ef9d3d6cbf08.txt
 
+Snippet:
+    }, {
+      "desc": "sensitive data flow",
+      "sourceStmt": "$r24 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>($r24)",
+      "custom": "",
+      "vulnKind": 2,
+      "destMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "paths": [],
+      "destStmt": "virtualinvoke $r1.<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)>($r27, $r24)",
+      "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+    }, {
+      "desc": "sensitive data flow",
+      "sourceStmt": "$r4 = virtualinvoke $r2.<android.content.Intent: android.os.Bundle getExtras()>()",
+      "custom": "",
+      "vulnKind": 2,
+      "destMethod": "<com.fugao.fxhealth.receiver.JPushReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+      "paths": [],
+      "destStmt": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2)",
+      "sourceMethod": "<com.fugao.fxhealth.receiver.JPushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+    }, {
+      "desc": "sensitive data flow",
+      "sourceStmt": "$r6 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>($r6)",
+      "custom": "",
+      "vulnKind": 2,
+      "destMethod": "<cn.jpush.android.data.x: void a(android.content.Context)>",
+      "paths": [],
+      "destStmt": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2)",
+      "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+    }, {
+      "desc": "sensitive data flow",
+      "sourceStmt": "$r9 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>($r9)",
+      "custom": "",
+      "vulnKind": 2,
+      "destMethod": "<cn.jpush.android.data.x: void a(android.content.Context)>",
+      "paths": [],
+      "destStmt": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2)",
+      "sourceMethod": "<cn.jpush.android.service.PushReceiver: void onReceive(android.content.Context,android.content.Intent)>"
+    }]
+  }
 # Hint
 To avoid OOM, add -Xmx option to commandline, e.g. java -jar jade-0.1.jar -Xmx8192m
 
