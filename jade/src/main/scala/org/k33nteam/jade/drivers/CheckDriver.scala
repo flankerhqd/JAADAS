@@ -30,13 +30,13 @@ import scala.collection.mutable.ListBuffer
 
 class CheckDriver (apkPath: String, platformPath: String, cfgDir: String){
 
-  var sourceSinkDataFlowIn:String = cfgDir + "SourcesAndSinks.txt"
-  var sourceSinkDataFlowOut:String = cfgDir + "sourcesinks-dataout.txt"
-  var reachabilityFile:String = cfgDir + "direct.txt"
-  var taintwrapperFile:String = cfgDir + "EasyTaintWrapperSource.txt"
-  var constantRuleFile:String = cfgDir + "ConstantRules.groovy"
+  var sourceSinkDataFlowIn:String = cfgDir + File.separator + "SourcesAndSinks.txt"
+  var sourceSinkDataFlowOut:String = cfgDir + File.separator + "sourcesinks-dataout.txt"
+  var reachabilityFile:String = cfgDir + File.separator + "direct.txt"
+  var taintwrapperFile:String = cfgDir + File.separator + "EasyTaintWrapperSource.txt"
+  var constantRuleFile:String = cfgDir + File.separator + "ConstantRules.groovy"
 
-  JadeCfg.setCallback_file(cfgDir + "AndroidCallbacks.txt")
+  JadeCfg.setCallback_file(cfgDir + File.separator + "AndroidCallbacks.txt")
 
   private def methodPlugins = Array(
     CustomVerifierPluginImpl.getPlugin,
@@ -299,7 +299,7 @@ class CheckDriver (apkPath: String, platformPath: String, cfgDir: String){
     {
       ret.append(VulnResult.toManifestConfigVuln("application is debuggable"))
     }
-    if(processManifest.isApplicationDisallowBackup())
+    if(!processManifest.isApplicationDisallowBackup())
     {
       ret.append(VulnResult.toManifestConfigVuln("application doesn't disable backup"))
     }

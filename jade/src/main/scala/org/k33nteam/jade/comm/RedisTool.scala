@@ -22,12 +22,12 @@ object CommTool {
     r.rpush("static-results",StaticResultForAPK(results.map(_.scoring).sum, md5, results.map(VulnRepresent.toVulnRepresent(_))).toJson)
   }
 
-  def putResultIntoFile(filepath:String, results:Iterable[VulnResult]): Unit = {
+  def putResultIntoFile(dirpath:String = "output", filepath:String, results:Iterable[VulnResult]): Unit = {
     val fis = new FileInputStream(new File(filepath))
     val md5 = org.apache.commons.codec.digest.DigestUtils.md5Hex(fis)
-    val file = new File("output/")
+    val file = new File(dirpath)
     file.mkdir
-    val writer = new FileWriter(new File("output/" + md5 + ".txt"))
+    val writer = new FileWriter(new File(dirpath, md5 + ".txt"))
     writer.write(StaticResultForAPK(results.map(_.scoring).sum, md5, results.map(VulnRepresent.toVulnRepresent(_))).toJson.prettyPrint)
     writer.close
   }

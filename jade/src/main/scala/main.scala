@@ -6,13 +6,13 @@ import java.io.{FileInputStream, File}
 import org.k33nteam.jade.tools.FuzzGenerator
 
 
-case class Config(mode: String = "vulnanalysis", fastAnalysis: Boolean = false, enableFlowOut: Boolean = false, apkPath: String = "", androidlibPath: String = "", configDirPath: String = "", redis: String = "")
+case class Config(mode: String = "vulnanalysis", fastAnalysis: Boolean = false, enableFlowOut: Boolean = false, apkPath: String = "", androidlibPath: String = "", configDirPath: String = "", redis: String = "", outputPath: String = "output/")
 
 object main {
   def main(args: Array[String]) {
 
     val parser = new scopt.OptionParser[Config]("jade") {
-      head("Joint Application Defect asseEsment - JADA", "1.0alpha, author flanker")
+      head("Joint Application Defect asseEsment - JADA", "1.0alpha, author flanker (i#flanker017.me) ")
 
       //general options
       opt[String]('f', "apkFile") required() action { (s, c) =>
@@ -34,9 +34,12 @@ object main {
       opt[String]("redis") action { (s, c) =>
         c.copy(redis = s)
       } text ("store json result in redis"),
-      opt[String]('c', "configDirPath") action { (s, c) =>
+      opt[String]('c', "configDirPath") required() action { (s, c) =>
         c.copy(configDirPath = s)
-      } text ("specify config dir path, should contains the following files: ConstantRules.groovy AndroidCallbacks.txt SourcesAndSinks.txt direct.txt")
+      } text ("specify config dir path, should contains the following files: ConstantRules.groovy AndroidCallbacks.txt SourcesAndSinks.txt direct.txt"),
+      opt[String]('o', "outputpath") action { (s, c) =>
+        c.copy(outputPath = s)
+      } text ("optionally specify the output directory path")
       )
 
       cmd("fuzzgen") action { (_, c) =>
@@ -74,11 +77,11 @@ object main {
             if(config.redis != "")
               CommTool.putResult(config.redis,config.apkPath,vulns)
             else {
-              CommTool.putResultIntoFile(config.apkPath, vulns)
+              CommTool.putResultIntoFile(config.outputPath, config.apkPath, vulns)
               println()
               println("...............................")
               println("risk score: %f".format(CommTool.computeSumScore(vulns)))
-              println("analysis finished, see results at output/%s.txt".format(org.apache.commons.codec.digest.DigestUtils.md5Hex(new FileInputStream(new File(config.apkPath)))))
+              println("analysis finished, see results at %s%s%s.txt".format(config.outputPath, File.separator, org.apache.commons.codec.digest.DigestUtils.md5Hex(new FileInputStream(new File(config.apkPath)))))
             }
 
             //remove tmplibs
@@ -108,7 +111,6 @@ object main {
         println("Oops, bad args! Memeda doesn't like slipper")
     }
     //val acd = new CheckDriver("/tmp/TestWebview.apk", "/Users/hqdvista/android-sdks/platforms")
-    //val acd = new CheckDriver("/media/DATA/TestWebview.apk", "/home/hqd/adt-bundle/sdk/platforms", "/home/hqd/Dropbox/keen/Jade-product/")
   }
 
 }

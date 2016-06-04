@@ -25,5 +25,5 @@ object CheckZipEntry extends IAPICheckPlugin{
     body.getLocals.exists(_.getType.toString == "java.util.zip.ZipEntry") || body.getParameterLocals.exists(_.getType.toString == "java.util.zip.ZipEntry")
   }
 
-  override def getDesc: String = "ZipEntry found, may be vulnerable to ZipEntry unzip directory traversal vulnerability"
+  override def getDesc: String = "Scan for ZipEntry vulnerable to unzip directory traversal vulnerability"
 }

@@ -63,5 +63,5 @@ object WebviewSavePwdPlugin extends IAPICheckPlugin{
     }).get
   }
 
-  override def getDesc(): String = "webview save password not disabled"
+  override def getDesc(): String = "Check webview save password disabled or not"
 }
