@@ -105,3 +105,8 @@ Thanks Soot authors (https://github.com/Sable/soot) for providing such a good fr
 # Disclaimer:
 This is just a research prototype, use at your own risk. The results may contain false positives and false negatives due to the nature of static
 analysis. Feel free to fork and pull it.
+
+# Requirements
+
+JDK >= 1.8 
+Scala >=2.11 Tested
