@@ -26,7 +26,9 @@ Command line for analysis:
 not understand the config files content, do not modify them, leave them as it is.
 
 ###-p option
--p option specifies the android platform directory, which usually just points to ${ANDROID_SDK}/platforms/
+-p option specifies the android platform directory, which usually just points to ${ANDROID_SDK}/platforms/.
+#### Notice
+Soot requires the specific version of platform.jar to be presented, for example, if your analysis target has targetSDK=22, then Soot will look for platforms/android-22/android.jar, otherwise will raise error. If you don't have the specific jar, actually you can just make a symbolic at that position pointing what you already have, say, android-16.jar to make Soot happy. It won't affect analysis result precision.
 
 ### -f option
 -f option specifies the APK to be analyzed.
