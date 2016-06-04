@@ -78,11 +78,11 @@ Snippet:
 ```
 
 # Hint
-To avoid OOM, add -Xmx option to commandline, e.g. java -jar JAADAS-0.1.jar -Xmx8192m
+To avoid OOM, add -Xmx option to commandline, e.g. java -jar jade-0.1.jar -Xmx8192m
 
 # Build from source code
 
-JAADAS is organized by gradle. Run `gradle fatJar` at the root of source directory and single-bundled jar will be generated at ./JAADAS/build/
+JAADAS is organized by gradle. Run `gradle fatJar` at the root of source directory and single-bundled jar will be generated at ./jade/build/
 Each directory actually represents a git submodule originally. For simplicity I am combining them to same root directories and you can change it 
 as you wish, track upstream Soot changes.
 
