@@ -19,7 +19,7 @@ to achieve maxmium flexibility. In normal situations this mode is enough for com
 --fastanalysis enables fastanalysis and disables fullanalysis.
 
 Command line for analysis:
-`java -jar JAADAS-0.1.jar vulnanalysis -f 1.apk -p /Users/hqdvista/android-sdks/platforms/ -c /Users/hqdvista/Dropbox/keen/JAADAS-devs/JAADAS/config/ --fastanalysis`
+`java -jar jade-0.1.jar vulnanalysis -f 1.apk -p /xxx/android-sdks/platforms/ -c /xxx/JAADAS/config/ --fastanalysis`
 
 ###-c option
 -c must be provided as the directory for config files, including taint rules, source and sink, vulnerable API description and so on. If you do
