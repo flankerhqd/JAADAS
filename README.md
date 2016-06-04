@@ -92,7 +92,7 @@ https://speakerdeck.com/flankerhqd/jade-joint-advanced-defect-assesment
 
 # Prebuilt binary Download
 
-https://github.com/flankerhqd/JAADAS/releases/download/release0.1/JAADAS-0.1alpha.zip
+https://github.com/flankerhqd/JAADAS/releases/download/release0.1/jaadas-0.1.zip
 
 # Credits
 Thanks Soot authors (https://github.com/Sable/soot) for providing such a good framework.
