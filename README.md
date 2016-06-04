@@ -108,5 +108,6 @@ analysis. Feel free to fork and pull it.
 
 # Requirements
 
-JDK >= 1.8 
+JDK >= 1.8 (must)
+
 Scala >=2.11 Tested
