@@ -78,7 +78,7 @@ Snippet:
 ```
 
 # Hint
-To avoid OOM, add -Xmx option to commandline, e.g. java -jar jade-0.1.jar -Xmx8192m
+To avoid OOM, add -Xmx option to commandline, e.g. java -jar -Xmx8192m jade-0.1.jar
 
 # Build from source code
 
