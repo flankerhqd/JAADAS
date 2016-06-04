@@ -1,10 +1,9 @@
 *.class
-
+build/
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
 .idea/
@@ -16,3 +15,10 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Soot build files
+soot/lib/soot-trunk.jar
+soot/lib/sootclasses-trunk.jar
+jasmin/lib/jasminclasses-2.2.1.jar
+heros/heros-trunk.jar
+heros/herosclasses-trunk.jar
