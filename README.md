@@ -97,6 +97,11 @@ https://github.com/flankerhqd/JAADAS/releases/download/release0.1/jaadas-0.1.zip
 # Credits
 Thanks Soot authors (https://github.com/Sable/soot) for providing such a good framework.
 
+# Some Key vulnerabilites found by JAADS
+
+ - CVE-2015-3854 in AOSP: http://seclists.org/fulldisclosure/2016/May/71
+ - Sogou Input Method Remote Code Execution: https://www.youtube.com/watch?v=3PlJbmAJjW0
+
 # Disclaimer:
 This is just a research prototype, use at your own risk. The results may contain false positives and false negatives due to the nature of static
 analysis. Feel free to fork and pull it.
