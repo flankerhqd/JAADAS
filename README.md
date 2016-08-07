@@ -1,4 +1,3 @@
-# 请注意，本软件采用修改过的GPL协议。除了GPL的限制之外，本协议同时禁止任何以此软件为基础再开发、再包含作为商业软件或服务（例如扫描器、漏扫服务）进行盈利的行为。
 # Joint Advanced Application Defect Assessment for Android Application
 This is Joint Advanced Defect Assessment framework for android applications (JAADS, original name JADE renamed to avoid potential trademark issue), written in 2014. JAADAS is a tool written in Java and Scala with the power of Soot to provide 
 both interprocedure and intraprocedure static analysis for android applications. Its features include API misuse analysis, local-denial-of-service
