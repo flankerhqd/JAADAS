@@ -92,6 +92,10 @@ as you wish, track upstream Soot changes.
 
 https://speakerdeck.com/flankerhqd/jade-joint-advanced-defect-assesment
 
+# Ideas in Design
+
+https://github.com/flankerhqd/JAADAS/wiki
+
 # Prebuilt binary Download
 
 https://github.com/flankerhqd/JAADAS/releases/download/release0.1/jaadas-0.1.zip
