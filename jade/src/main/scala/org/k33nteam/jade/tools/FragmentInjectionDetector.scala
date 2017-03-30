@@ -14,7 +14,11 @@ object FragmentInjectionDetector {
       Scene.v().getOrMakeFastHierarchy()
       val sootClass = Scene.v().getSootClass(clzName)
       val prefClass = Scene.v().getSootClass("android.preference.PreferenceActivity")
-
+      if(sootClass.isPhantomClass || prefClass.isPhantomClass)
+        {
+          System.err.println("error in resolving class, maybe dex file missing from APK?")
+          return false
+        }
       Scene.v().getOrMakeFastHierarchy().isSubclass(sootClass, prefClass)
     }
     catch {

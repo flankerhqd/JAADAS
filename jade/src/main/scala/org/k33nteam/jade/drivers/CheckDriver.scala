@@ -303,14 +303,17 @@ class CheckDriver (apkPath: String, platformPath: String, cfgDir: String){
     {
       ret.append(VulnResult.toManifestConfigVuln("application doesn't disable backup"))
     }
-
-    for(exportedComp <- processManifest.getExportedComponents)
-    {
-      if(FragmentInjectionDetector.checkComponent(exportedComp))
+    if(targetSDK < 17){
+        for(exportedComp <- processManifest.getExportedComponents)
       {
-        ret.append(VulnResult.toManifestConfigVuln(exportedComp + " FragmentInjection exist! (before API 17)"))
+        if(FragmentInjectionDetector.checkComponent(exportedComp))
+        {
+          ret.append(VulnResult.toManifestConfigVuln(exportedComp + " FragmentInjection exist! (before API 17)"))
+        }
       }
     }
+
+
     ret
     //
   }
